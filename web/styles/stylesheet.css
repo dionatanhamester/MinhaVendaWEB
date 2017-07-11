@@ -1,0 +1,183 @@
+/*HEADER BAR*/
+.header {
+    height: 50px;
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    margin-left: 161px;
+    background-color: #f2f2f2;    
+    position: fixed;
+    z-index: 1;
+}
+
+.header p{
+    margin-left: 10px;
+    font-weight: bold;
+    vertical-align: middle;
+    font-family: serif;
+}
+
+/*LEFT BAR */
+.left {
+    margin-top: -10px;
+    margin-left: -10px;        
+    display: inline-block;
+    height: 100%;
+    width: 12%;    
+    background-color: #004f9e;
+    border-radius: 5px;    
+    float: left;
+}
+
+.left .leftlogo {
+      background-image: url(../images/univates.png);
+      background-repeat: no-repeat;      
+      padding-top:180px;
+   }
+
+.left ul {
+    list-style-type: none;    
+    margin: 0;
+    padding: 0;
+    width: 100%;    
+    background-color: #004f9e;
+    font-family: serif;
+}
+
+.left li a:hover:not(.active) {
+    background-color: #007ba8;
+    color: white;    
+    font-family: serif;
+}
+
+.left li a {
+    display: block;
+    color: white;    
+    padding: 8px 16px;
+    font-family: serif;
+    text-decoration: none;
+}
+
+/* OTHERS */
+.currentMenuSelect {
+    background-color: #002846;
+}
+
+/*ALL */
+
+.all {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 78%;            
+}
+
+.button-primary {
+    background-color: #0066ff; /* Green */
+    border: none;
+    color: white;
+    opacity: 1;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button-primary:hover {
+    opacity: 0.75;
+}
+
+.button-danger {
+    background-color: #cc2900; /* red */
+    border: none;
+    color: white;
+    opacity: 1;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button-danger:hover {
+    opacity: 0.75;
+}
+
+.button-success {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    opacity: 1;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button-success:hover {
+    opacity: 0.75;
+}
+
+label {
+    color: black;  
+    font-weight: bold;
+}
+
+/*TABLE STYLE*/
+.datatable{    
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.datatable tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
