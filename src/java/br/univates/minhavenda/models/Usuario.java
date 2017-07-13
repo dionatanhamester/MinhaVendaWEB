@@ -21,9 +21,11 @@ public class Usuario {
     private String Cidade;
     private String Endereco;
     private String Email;
-    private String Telefone;
-    private String SenhaMD5;
+    private String Telefone;    
     private String TipoAcesso;
+    private String Usuario;
+    private String Senha;
+    
 
     public Usuario(){}
 
@@ -123,12 +125,20 @@ public class Usuario {
         Telefone = telefone;
     }
 
-    public String getSenhaMD5() {
-        return SenhaMD5;
+    public String getSenha() {
+        return Senha;
     }
 
-    public void setSenhaMD5(String senhaMD5) {
-        SenhaMD5 = senhaMD5;
+    public void setSenha(String senha) {
+        Senha = senha;
+    }
+    
+    public String getUsuario(){
+        return Usuario;
+    }
+    
+    public void setUsuario(String usuario){
+        Usuario = usuario;
     }
 
     public String getTipoAcesso() {

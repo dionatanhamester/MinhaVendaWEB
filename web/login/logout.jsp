@@ -4,9 +4,7 @@
     Author     : Dionatan
 --%>
 
-<%-- <%@page contentType="text/html" pageEncoding="UTF-8"%> --%>
-<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%> 
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,14 +15,15 @@
     <body>
         
         <% 
-            session.removeAttribute("login");
+            session.removeAttribute("us_nome");
+            session.removeAttribute("us_tipoacesso");
             session.removeAttribute("us_codigo");
             session.removeAttribute("us_empresa");
             
             String caminho = request.getContextPath() + "/index.jsp"; 
         %>
         
-        <h1>Usu·rio desconectado.</h1>
+        <h1>Usu√°rio desconectado.</h1>
         
         
     </body>

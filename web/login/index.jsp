@@ -6,15 +6,13 @@
 
 
 <%
-    // Se j· estiver logado, ir direto para a p·gina principal
+    // Se jÔøΩ estiver logado, ir direto para a pÔøΩgina principal
     if ((session.getAttribute("login") != null) && (session.getAttribute("login") != "")) {
         response.sendRedirect(request.getContextPath() + "/principal.jsp");
     }
 %>
 
-<%-- <%@page contentType="text/html" pageEncoding="UTF-8"%> --%>
-<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -35,21 +33,21 @@
                         </div>
                         <div class="form-row">
                             <label>
-                                <span>Nome usu·rio:</span>
-                                <input type="text" required="true" name="usuario">
+                                <span>Nome usu√°rio:</span>
+                                <input type="text" required="true" id="usuario" name="usuario">
                             </label>
                         </div>
                         <div class="form-row">
                             <label>
                                 <span>Senha:</span>
-                                <input type="password" required="true" name="senha">
+                                <input type="password" required="true" id="senha" name="senha">
                             </label>
                         </div>
                         <div class="form-row">
                             <button type="submit">Login</button>
                         </div>
                     </div>
-                    <div class="form-log-in-with-existing">Ainda n„o tem registro? Solicite o acesso junto ao administrador.</a>
+                    <div class="form-log-in-with-existing">Ainda n√£o tem registro? Solicite o acesso junto ao administrador.</a>
                 </div>
             </form>
         </div>

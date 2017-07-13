@@ -22,6 +22,9 @@ public class SequencesDAO extends CustomDAO<Sequences>{
     public static final String GEN_GRUPOS    = "gen_grupos";
     public static final String GEN_PRODUTOS  = "gen_produtos";
     public static final String GEN_CLIENTES  = "gen_clientes";
+    public static final String GEN_USUARIO   = "gen_usuario";
+    public static final String GEN_FORMASPGTO = "gen_formaspgto";
+    public static final String GEN_TABELAPRECOS = "gen_tabela_precos";
     
     public int getAutoIncrement(String TYPE){
         int vReturn = -1;
@@ -51,7 +54,16 @@ public class SequencesDAO extends CustomDAO<Sequences>{
             } else if (TYPE.equals(GEN_CLIENTES)){
                 vReturn = seq.getGenClientes();    
                 seq.setGenClientes(seq.getGenClientes()+ 1 );
-            } 
+            } else if (TYPE.equals(GEN_USUARIO)){
+                vReturn = seq.getGenUsuario();    
+                seq.setGenUsuario(seq.getGenUsuario()+ 1 );
+            } else if (TYPE.equals(GEN_FORMASPGTO)){
+                vReturn = seq.getGenFormasPgto();    
+                seq.setGenFormasPgto(seq.getGenFormasPgto() + 1 );
+            }  else if (TYPE.equals(GEN_TABELAPRECOS)){
+                vReturn = seq.getGenTabelaPrecos();    
+                seq.setGenTabelaPrecos(seq.getGenTabelaPrecos() + 1 );
+            }   
             update(seq);                                  
             
         } catch (ClassNotFoundException ex) {
@@ -73,7 +85,10 @@ public class SequencesDAO extends CustomDAO<Sequences>{
             seq.setGenGrupos(rs.getInt(GEN_GRUPOS));
             seq.setGenProdutos(rs.getInt(GEN_PRODUTOS));
             seq.setGenClientes(rs.getInt(GEN_CLIENTES));
-                        
+            seq.setGenUsuario(rs.getInt(GEN_USUARIO));
+            seq.setGenFormasPgto(rs.getInt(GEN_FORMASPGTO));
+            seq.setGenTabelaPrecos(rs.getInt(GEN_TABELAPRECOS));
+
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());
         }                                 

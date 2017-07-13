@@ -2,39 +2,36 @@
     Document   : login
     Created on : 10/07/2017, 21:59:02
     Author     : Dionatan
---%>
+--%>    
 
+
+<%@page import="br.univates.minhavenda.controller.UsuarioDAO"%>
+<%@page import="br.univates.minhavenda.models.Usuario"%>
 
 <%@ page import ="java.sql.*" %>
-<%
-    String usuario = request.getParameter("usuario");
-    String senha   = request.getParameter("senha");
-
-    /*Class.forName("org.postgresql.Driver");
-    Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/progr_web", "postgres", "postgres");
-    Statement st = conn.createStatement();
-
-    ResultSet rs;
-    // SQL para verificar se existe algum usuário e senha correspondente
-    String sql = "select * from usuarios where login='" + usuario + "' and senha='" + senha + "'";
+<%     
+    String user = request.getParameter("usuario");
+    String pass = request.getParameter("senha");
+ 
+    UsuarioDAO usuarioDAO = new UsuarioDAO();
     
-    //out.write(sql);
+    Usuario usuario = null;
+    usuario = usuarioDAO.getUsuarioLogin(user, pass);
     
-    rs = st.executeQuery(sql);
-
     // Se algum registro foi encontrado, registrar na sessão
-    if (rs.next()) {*/
+    if (usuario != null) {
         // Registrar informação de login na sessão
-        session.setAttribute("login", "Dionatan Hamester");
-        session.setAttribute("us_codigo",  0);
-        session.setAttribute("us_empresa", 9);
+        session.setAttribute("us_nome", usuario.getNome());
+        session.setAttribute("us_tipoacesso", usuario.getTipoAcesso());
+        session.setAttribute("us_codigo",  usuario.getCodigo());
+        session.setAttribute("us_empresa", usuario.getEmpresa());
         
         String caminho = request.getContextPath() + "/index.jsp";
         
         // Redirecionar para o arquivo principal.jsp
         response.sendRedirect( caminho );
-    /*} else {
-        out.println("Senha Inválida, <a href='index.jsp'>tente novamente!</a>");
-    }*/
+    } else {
+        out.println("Usuário ou Senha Inválida, <a href='index.jsp'>tente novamente!</a>");
+    }
 %>
 

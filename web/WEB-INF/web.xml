@@ -40,6 +40,58 @@
         <servlet-name>ProdutosExcluir</servlet-name>
         <servlet-class>br.univates.minhavenda.servlets.ProdutosExcluir</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ClientesInsert</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.ClientesInsert</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ClientesUpdate</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.ClientesUpdate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ClientesExcluir</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.ClientesExcluir</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UsuariosInsert</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.UsuariosInsert</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UsuariosUpdate</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.UsuariosUpdate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UsuariosExcluir</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.UsuariosExcluir</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RealizaLogin</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.RealizaLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FormasPgtoInsert</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.FormasPgtoInsert</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FormasPgtoUpdate</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.FormasPgtoUpdate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FormasPgtoExcluir</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.FormasPgtoExcluir</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TabelaPrecosInsert</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.TabelaPrecosInsert</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TabelaPrecosUpdate</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.TabelaPrecosUpdate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TabelaPrecosExcluir</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.TabelaPrecosExcluir</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>EmpresaExcluir</servlet-name>
         <url-pattern>/EmpresaExcluir</url-pattern>
@@ -79,6 +131,58 @@
     <servlet-mapping>
         <servlet-name>ProdutosExcluir</servlet-name>
         <url-pattern>/ProdutosExcluir</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClientesInsert</servlet-name>
+        <url-pattern>/ClientesInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClientesUpdate</servlet-name>
+        <url-pattern>/ClientesUpdate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClientesExcluir</servlet-name>
+        <url-pattern>/ClientesExcluir</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UsuariosInsert</servlet-name>
+        <url-pattern>/UsuariosInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UsuariosUpdate</servlet-name>
+        <url-pattern>/UsuariosUpdate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UsuariosExcluir</servlet-name>
+        <url-pattern>/UsuariosExcluir</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RealizaLogin</servlet-name>
+        <url-pattern>/RealizaLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FormasPgtoInsert</servlet-name>
+        <url-pattern>/FormasPgtoInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FormasPgtoUpdate</servlet-name>
+        <url-pattern>/FormasPgtoUpdate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FormasPgtoExcluir</servlet-name>
+        <url-pattern>/FormasPgtoExcluir</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TabelaPrecosInsert</servlet-name>
+        <url-pattern>/TabelaPrecosInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TabelaPrecosUpdate</servlet-name>
+        <url-pattern>/TabelaPrecosUpdate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TabelaPrecosExcluir</servlet-name>
+        <url-pattern>/TabelaPrecosExcluir</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

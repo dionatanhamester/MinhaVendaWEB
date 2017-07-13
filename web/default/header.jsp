@@ -5,7 +5,7 @@
 --%>
 
 <%
-    if ((session.getAttribute("login") == null) || (session.getAttribute("login") == "")) {
+    if ((session.getAttribute("us_nome") == null) || (session.getAttribute("us_nome") == "")) {
         response.sendRedirect(request.getContextPath()+"/login/index.jsp");
     } else {         
 %>

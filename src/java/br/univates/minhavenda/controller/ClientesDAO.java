@@ -25,7 +25,6 @@ public class ClientesDAO extends CustomDAO<Clientes>{
             cliente.setCodigo(rs.getInt("cl_codigo"));
             cliente.setMatricula(rs.getString("cl_matricula"));
             cliente.setNome(rs.getString("cl_nome"));
-            
             cliente.setEndereco(rs.getString("cl_endereco"));
             cliente.setCidade(rs.getString("cl_cidade"));
             cliente.setBairro(rs.getString("cl_bairro"));
@@ -126,7 +125,7 @@ public class ClientesDAO extends CustomDAO<Clientes>{
             Statement st = new Database().getInstance();
                       
             //ResultSet rs;      
-            st.executeUpdate("UPDATE public.grupos set " 
+            st.executeUpdate("UPDATE public.clientes set " 
                                     + " cl_matricula   = '"+ obj.getMatricula()+"', "
                                     + " cl_nome        = '"+ obj.getNome()+"', "
                                     + " cl_endereco    = '"+ obj.getEndereco()+"', "
