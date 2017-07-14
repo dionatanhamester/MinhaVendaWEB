@@ -4,38 +4,7 @@
     Author     : Dionatan
 --%>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  } );
-  </script>
-
+ 
 <form id="formTabelaPrecos" name="formTabelaPrecos" method="post" action="javascript:salvar();">
         <table align="center" style="width:100%">          
             <tbody>
@@ -96,9 +65,26 @@
                         <%if (tabelapreco == null) { %>
                             <input class="button-danger"  type="reset"  id="limpar" value=" Limpar">
                         <%} %>                                                    
-                        <input class="button-success" type="submit" id="enviar" value=" Gravar!">          
+                        <input class="button-success" type="submit" id="enviar" value=" Gravar!">
+                        <br>
+                        <br>                      
                     </td>           
                 </tr>  
             </tbody>                            
         </table>
 </form>
+                        
+<table align="center" style="width:100%">          
+    <tbody>
+        <tr>          
+            <td align="right" colspan="4">  
+                <% if (request.getParameter("cod") != null) { %>
+                    <a href="produtos/registro.jsp?empr=<%= request.getParameter("empr") %>&&cod=<%= request.getParameter("cod") %>" ><button class="button-primary" id="adicionar">Ajustar Produtos <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></a>                     
+                <%}%>
+            </td>           
+        </tr>  
+    </tbody>                            
+</table> 
+            
+            
+            

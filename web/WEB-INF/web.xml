@@ -92,6 +92,54 @@
         <servlet-name>TabelaPrecosExcluir</servlet-name>
         <servlet-class>br.univates.minhavenda.servlets.TabelaPrecosExcluir</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ListProdutosTabelaPrecos</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.ListProdutosTabelaPrecos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TabelaPrecosProdutosSave</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.TabelaPrecosProdutosSave</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TabelaPrecosProdutosExcluir</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.TabelaPrecosProdutosExcluir</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListClientes</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.ListClientes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListFormasPgto</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.ListFormasPgto</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PedidosInsert</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.PedidosInsert</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PedidosUpdate</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.PedidosUpdate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PedidosExcluir</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.PedidosExcluir</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListProdutosPedidos</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.ListProdutosPedidos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListTabelaPrecos</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.ListTabelaPrecos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PedidosProdutosSave</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.PedidosProdutosSave</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PedidosProdutosExcluir</servlet-name>
+        <servlet-class>br.univates.minhavenda.servlets.PedidosProdutosExcluir</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>EmpresaExcluir</servlet-name>
         <url-pattern>/EmpresaExcluir</url-pattern>
@@ -183,6 +231,54 @@
     <servlet-mapping>
         <servlet-name>TabelaPrecosExcluir</servlet-name>
         <url-pattern>/TabelaPrecosExcluir</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListProdutosTabelaPrecos</servlet-name>
+        <url-pattern>/ListProdutosTabelaPrecos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TabelaPrecosProdutosSave</servlet-name>
+        <url-pattern>/TabelaPrecosProdutosSave</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TabelaPrecosProdutosExcluir</servlet-name>
+        <url-pattern>/TabelaPrecosProdutosExcluir</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListClientes</servlet-name>
+        <url-pattern>/ListClientes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListFormasPgto</servlet-name>
+        <url-pattern>/ListFormasPgto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PedidosInsert</servlet-name>
+        <url-pattern>/PedidosInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PedidosUpdate</servlet-name>
+        <url-pattern>/PedidosUpdate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PedidosExcluir</servlet-name>
+        <url-pattern>/PedidosExcluir</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListProdutosPedidos</servlet-name>
+        <url-pattern>/ListProdutosPedidos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListTabelaPrecos</servlet-name>
+        <url-pattern>/ListTabelaPrecos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PedidosProdutosSave</servlet-name>
+        <url-pattern>/PedidosProdutosSave</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PedidosProdutosExcluir</servlet-name>
+        <url-pattern>/PedidosProdutosExcluir</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

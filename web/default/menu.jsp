@@ -1,5 +1,5 @@
 <div class="left">
-    <a href="../index.jsp"><div class="leftlogo"></div></a>
+    <a href="<%=request.getContextPath()%>/index.jsp"><div class="leftlogo"></div></a>
     <div id="navbarleft">         
         <ul>
             <% if (session.getAttribute("us_tipoacesso").equals("GERENTE")) { %>
@@ -12,7 +12,7 @@
                 <li><a href="<%=request.getContextPath()%>/formaspgto/listar.jsp"><i class="fa fa-google-wallet" aria-hidden="true"> </i> Formas de Pgto</a></li>           
                 <li><a href="<%=request.getContextPath()%>/tabelaprecos/listar.jsp"><i class="fa fa-table" aria-hidden="true"> </i> Tabela de Preços</a></li>           
             <%}%>       
-            <li><a href="<%=request.getContextPath()%>/lista_pedidos.jsp"><i class="fa fa-tags" aria-hidden="true"> </i> Pedidos</a></li>           
+            <li><a href="<%=request.getContextPath()%>/pedidos/listar.jsp"><i class="fa fa-tags" aria-hidden="true"> </i> Pedidos</a></li>           
             <% if (session.getAttribute("us_tipoacesso").equals("GERENTE")) { %>
                 <li><a href="<%=request.getContextPath()%>/usuarios/listar.jsp"><i class="fa fa-users" aria-hidden="true"> </i> Usuários</a></li>           
             <%}%>    

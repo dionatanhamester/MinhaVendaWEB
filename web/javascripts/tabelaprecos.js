@@ -23,7 +23,7 @@
                 url : contextPath + "/TabelaPrecosInsert", 
                 data: $(this).serializeArray(),                        
                 success: function(returnFunction){                                                             
-                    alert(returnFunction);
+                    alert(returnFunction);                    
                 }
             });                     
             return false;

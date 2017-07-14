@@ -25,6 +25,7 @@ public class SequencesDAO extends CustomDAO<Sequences>{
     public static final String GEN_USUARIO   = "gen_usuario";
     public static final String GEN_FORMASPGTO = "gen_formaspgto";
     public static final String GEN_TABELAPRECOS = "gen_tabela_precos";
+    public static final String GEN_PEDIDOS      = "gen_pedidos";
     
     public int getAutoIncrement(String TYPE){
         int vReturn = -1;
@@ -63,7 +64,10 @@ public class SequencesDAO extends CustomDAO<Sequences>{
             }  else if (TYPE.equals(GEN_TABELAPRECOS)){
                 vReturn = seq.getGenTabelaPrecos();    
                 seq.setGenTabelaPrecos(seq.getGenTabelaPrecos() + 1 );
-            }   
+            }   else if (TYPE.equals(GEN_PEDIDOS)){
+                vReturn = seq.getGenPedidos();    
+                seq.setGenPedidos(seq.getGenPedidos()+ 1 );
+            }  
             update(seq);                                  
             
         } catch (ClassNotFoundException ex) {
@@ -88,6 +92,7 @@ public class SequencesDAO extends CustomDAO<Sequences>{
             seq.setGenUsuario(rs.getInt(GEN_USUARIO));
             seq.setGenFormasPgto(rs.getInt(GEN_FORMASPGTO));
             seq.setGenTabelaPrecos(rs.getInt(GEN_TABELAPRECOS));
+            seq.setGenPedidos(rs.getInt(GEN_PEDIDOS));
 
         } catch (SQLException ex) {
             System.out.print(ex.getMessage());

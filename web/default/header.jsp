@@ -13,16 +13,18 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
   <head>
+
     <meta charset="UTF-8">
-    <title>Minha Venda</title>                   
+    <title>Minha Venda</title>        
     
-    <link rel="stylesheet" type="text/css" href="../styles/stylesheet.css" />	
-    <link rel="stylesheet" href="../resources/font-awesome/css/font-awesome.min.css">        
+    <script>
+        var contextPath = "<%=request.getContextPath()%>";
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/styles/stylesheet.css" />	
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/resources/font-awesome/css/font-awesome.min.css">        
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>               
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
   </head>
   <body> 
-
-<script>
-    var contextPath = "<%=request.getContextPath()%>";
-</script>
+      
